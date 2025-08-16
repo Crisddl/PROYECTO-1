@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendario de Actividades</title>
+    <link rel="stylesheet" href="../css/estilo.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Calendario de Actividades</h1>
+      <a href="index.html" class="btn">VOLVER</a>
+    </header>
+
+    <section class="calendario">
+      <h2>Consultar eventos por fecha</h2>
+<form id="form-fechas">
+  <label for="desde">Desde:</label>
+  <input type="date" id="desde" name="desde" required />
+  
+  <label for="hasta">Hasta:</label>
+  <input type="date" id="hasta" name="hasta" required />
+
+  <button type="submit">Buscar actividades</button>
+</form>
+
+<ul id="resultados"></ul>
+
+
+      <div id="resultado-evento"></div>
+    </section>
+
+    <footer>
+      <p>© 2025 Residencial Alamedas de Santa Ana</p>
+    </footer>
+
+    <script src="../js/sql.js"></script>
+    <script src="../js/calendario.js"></script>
+  </body>
+</html>

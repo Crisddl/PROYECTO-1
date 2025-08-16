@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Consulta de Inquilinos</title>
+    <link rel="stylesheet" href="../css/estilo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Consulta de Estado de Cuotas</h1>
+      <a href="index.html" class="btn">VOLVER</a>
+    </header>
+
+    <main>
+      <section class="consulta-cuota">
+        <h2>Formulario de verificación</h2>
+        <form id="form-consulta">
+  <label for="dpi">DPI:</label>
+  <input type="text" id="dpi" required />
+
+  <label for="numeroCasa">Número de Casa:</label>
+  <input type="text" id="numeroCasa" required />
+
+  <label for="nombre">Primer Nombre:</label>
+  <input type="text" id="nombre" required />
+
+  <label for="apellido">Primer Apellido:</label>
+  <input type="text" id="apellido" required />
+
+  <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+  <input type="date" id="fechaNacimiento" required />
+
+  <button type="submit">Consultar Estado de Pago</button>
+  <button type="button" id="btnHistorial">Consultar Historial</button>
+</form>
+
+<div id="resultado-estado"></div>
+<div id="resultado-historial"></div>
+
+    </main>
+
+    <footer>
+      <p>© 2025 Residencial Alamedas de Santa Ana</p>
+    </footer>
+
+    <script src="../js/sql.js"></script>
+    <script src="../js/inquilinos.js"></script>
+  </body>
+</html>
